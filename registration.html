@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules and Policies</title>
+    <link rel="shortcut icon" href="./assets/Logo-Mighty-ducks-01.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="./styles/style3-flexbox.css">
+</head>
+<body>
+    <header>
+        <section class="h1">
+            <h1>Mighty Ducks Hockey League</h1>
+        </section>
+        <figure class="logo">
+            <img src="./assets/Logo-Mighty-ducks-01.png" alt="Mighty Ducks Logo">
+        </figure>
+    </header>
+    <nav>
+        <a class="index" href="index.html">Home</a>
+        <a class="about" href="about.html">About MDHL</a>
+        <a class="contact" href="contact.html">Contact</a>
+        <a class="game-info" href="game_info.html">Game Information</a>
+        <a class="rules-policies" href="rules.html">Rules and Policies</a>
+        <a class="registration" href="#">Registration</a>
+    </nav>
+    <main id="registration-main">
+        <article id="registration-box">
+            <form action="show_data.html">
+                <h2>Registration Form</h2>
+                <fieldset id="info-fieldset">
+                        <div class="name-box box">
+                            <div class="columna">
+                                <label for="first-name">Player's First Name:</label>
+                                <input name="first-name" id="first-name" type="text">
+                            </div>
+                            <div class="columna">
+                                <label for="last-name">Last Name:</label>
+                                <input name="last-name" id="last-name" type="text">
+                            </div>
+                        </div>
+                        <div class="address-box box">
+                            <label for="address">Street Address:</label>
+                            <input name="address" class="w-100" id="address" type="text">
+                            
+                        </div>
+                        <div class="city-box box">
+                            <div class="columna">
+                                <label for="city">City:</label>
+                                <input name="city" id="city" type="text">
+                            </div>
+                            <div class="columna">
+                                <label for="zip-code">Zip Code:</label>
+                                <input name="zip-code" id="zip-code" type="text">
+                            </div>
+                            
+                        </div>
+                        <div class="birth-gender box">
+                            <div class="columna birth-box">
+                                <label id="birth-label">Birth Date(mm/dd/yyyy):
+                                    <input name="date" type="date">
+                                </label>
+                            </div>
+                            <div class="columna gender-box">
+                                <span class="label-container">Gender:
+                                    <label>Female
+                                        <input name="gender" value="Female" type="radio">
+                                    </label>
+                                    <label>Male
+                                        <input name="gender" value="Male" type="radio">
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="grade-box box">
+                            <span id="grade-span" class="grade-box-within">
+                                Grade:
+                                <label>
+                                    <input type="radio" name="grade" value="Pre-school">
+                                    Pre-School 
+                                </label>
+                                <label>
+                                    <input type="radio" name="grade" value="1st">
+                                    1st 
+                                </label>
+                                <label>
+                                    <input type="radio" name="grade" value="2nd">
+                                    2nd 
+                                </label>
+                                <label>
+                                    <input type="radio" name="grade" value="3rd">
+                                    3rd 
+                                </label>
+                                <label>
+                                    <input type="radio" name="grade" value="4th">
+                                    4th 
+                                </label>
+                                <label>
+                                    <input type="radio" name="grade" value="5th">
+                                    5th 
+                                </label>
+                                
+                            </span>
+                        </div>
+                </fieldset>
+                <fieldset class="fieldset-column">
+                    
+                    <legend>Which elementary school do you live near?</legend>
+                    <h4>Closest School:</h4>
+                    <div class="input-in-columns closest-school">
+                        <div class="col">
+                            <label>
+                                <input type="radio" name="closest-school" value="AJ-Katzenmaier">
+                                AJ Katzenmaier
+                            </label>
+                            <label>
+                                <input type="radio" name="closest-school" value="Greenbay">
+                                Greenbay
+                            </label>
+                            <label>
+                                <input type="radio" name="closest-school" value="Howard">
+                                Howard A Yeager
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="radio" name="closest-school" value="Marjorie">
+                                Marjorie P Hart
+                            </label>
+                            <label>
+                                <input type="radio" name="closest-school" value="North-El">
+                                North Elementary
+                            </label>
+                            <label>
+                                <input type="radio" name="closest-school" value="South-El">
+                                South Elementary
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-column">
+                    <legend>Which elementary school do you live near?</legend>
+                    <div class="input-in-columns">
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" name="position" value="forward">
+                                Forward
+                            </label>
+                            <label>
+                                <input type="checkbox" name="position" value="defense">
+                                Defense
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="checkbox" name="position" value="midfield">
+                                Midfield
+                            </label>
+                            <label>
+                                <input type="checkbox" name="position" value="goalkeeper">
+                                Goalkeeper
+                            </label>
+    
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="fieldset-column">
+                    <legend>Which elementary school do you live near?</legend>
+                    <div class="input-in-columns">
+                        <div class="col">
+                            <label>
+                                <input type="radio" name="uniform" value="Youth-small">
+                                Youth Small
+                            </label>
+                            <label>
+                                <input type="radio" name="uniform" value="Youth-medium">
+                                Youth Medium
+                            </label>
+                            <label>
+                                <input type="radio" name="uniform" value="Youth-large">
+                                Youth Large
+                            </label>
+                            <label>
+                                <input type="radio" name="uniform" value="Small">
+                                Small
+                            </label>
+                        </div>
+                        <div class="col">
+                            <label>
+                                <input type="radio" name="uniform" value="Medium">
+                                Medium
+                            </label>
+                            <label>
+                                <input type="radio" name="uniform" value="Large">
+                                Large
+                            </label>
+                            <label>
+                                <input type="radio" name="uniform" value="Extra-large">
+                                Extra-Large
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="permission-box-fieldset">
+                    <legend>Permission to Play</legend>
+                    <p id="permit-p">I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the “League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers,including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities,which transportation
+                    By signing below, I herebyagree andauthorizethe above.In addition, by signing below, lalso acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                    <div id="permission-box" class="fieldset-column">
+                        <label>Parent/Guardian signature:
+                            <input name="guardian" type="text">
+                        </label>
+                        <label>Date:
+                            <input name="date" type="date">
+                        </label>
+                        <input type="submit" value="Submit">
+                    </div>
+                </fieldset>
+
+
+            </form>
+        </article>
+    </main>
+</body>
+</html>

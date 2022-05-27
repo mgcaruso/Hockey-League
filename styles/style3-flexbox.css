@@ -1,0 +1,944 @@
+* :not(dl,ol){
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 150px;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    background: url(../assets/design1_image1.jpg) no-repeat 50% 30%;
+}
+
+
+
+.logo{
+
+    animation-name: logo-animation;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+h1{
+    height: 100%;
+    display: flex;
+    align-items: end;
+    color: white;
+    font-size: 2.3rem;
+    letter-spacing: .2em;
+    text-shadow: 3px 2px 5px rgba(0,0,0,0.8);
+    text-transform: uppercase;
+    background: linear-gradient(263deg, rgba(255,255,255,0) 0%, rgba(0, 0, 0, 0.8) 61%);
+    padding-bottom: .2rem;
+
+    animation-name: h1-animation;
+    animation-duration: 3s;
+}
+
+@keyframes h1-animation {
+    0% { transform: translateX(-1000px)}
+    100% { transform: translateX(0px) }
+}
+
+@keyframes logo-animation {
+    0% { transform: rotateY(0);}
+    100% { transform: rotateY(180deg); }
+}
+
+/* NAV */
+
+nav{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    height: 100%;
+}
+
+nav a:hover{
+    background-color: #C0C0C0;
+    color:black;
+}
+
+a[href="#"]{
+    background-color: #202020;
+}
+
+a.index:hover{
+    background-color: #8b0000;
+    color:white;
+}
+
+/* MAIN */
+
+main{
+    background-image: url(../assets/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#imagen1{
+    object-position: -220px;
+}
+
+#imagen2{
+    object-position: -390px;
+}
+
+#imagen3{
+    object-position: -90px;
+}
+
+
+#upcoming-events{
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: lighter;
+}
+
+
+.title{
+    background-color: darkred;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contains title, text and image */
+
+.text-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* contains text and image */
+
+.article-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+}
+
+.picture{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-content-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.picture img{
+    filter: grayscale(1);
+}
+
+.text{
+    width: 80%;
+    padding: 3rem;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+}
+
+#rules-and-policies p {
+    text-align: center;
+}
+
+
+/* APPLYING STYLES TO TEXT */
+
+dd{
+    font-weight: bold;
+    padding: 1rem;
+}
+
+p{
+    padding: 1rem 0;
+    text-indent: 40px;
+}
+
+
+/* MAIL TO (ELEMENT A)*/
+
+#mailto{
+    color:white;
+    text-decoration: none;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+#mailto:hover{
+    color:white;
+    background-color: rgb(139, 0, 0);
+    border-radius: 20px;
+    padding: .5rem;
+    margin: .5rem;
+}
+
+h2,h3{
+    padding: .5rem;
+}
+
+/* LISTS */
+
+#rules-and-policies{
+    text-align: center;
+}
+
+article, div.article-table{
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+    padding: 1rem 2rem;
+}
+
+li{
+    padding: .8rem .5rem;
+}
+span{
+    font-weight: bold;
+}
+
+.upper-list{
+    list-style: inside;
+    list-style-type: decimal;
+}
+
+ul{
+    list-style: circle;
+    list-style-position: inside;
+}
+
+ul > li {
+    margin-left: 3rem;
+}
+
+li,p{
+    text-align: justify;
+}
+/* TABLE */
+.article-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+table a {
+    text-decoration: none;
+    color:white;    
+}
+
+td ,th{
+    height: 2rem;
+}
+
+th{
+    text-align: center;
+}
+
+tbody{
+    text-align: center;
+}
+
+.table-heading,.table-box{
+    width: 65vw;
+    margin: .5em 0;
+}
+
+.table-heading h2{
+    text-align: center;
+}
+
+.table-heading h4, .table-heading h5{
+    text-align: left;
+}
+
+.table-heading h5{
+    text-decoration: underline;
+    font-style: italic;
+    margin: .6rem 0 1.5rem 0;
+}
+
+tfoot td{
+    height: 4rem;
+}
+
+#td-top{
+    padding-top: 2em;
+}
+
+.registration-table tbody td:hover{
+    background-color:  #C0C0C0;
+    color:black;
+}
+
+.registration-table thead th:hover{
+    background-color: darkred;
+    color:white;
+}
+
+
+/* REGISTRATION PAGE */
+
+#registration-box {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 7em;
+}
+
+fieldset{
+    width: 100%;
+    padding: .6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+}
+
+/* labels */
+label{
+    /* width: auto; */
+    white-space: nowrap;
+    margin-inline-end: .4rem;
+    font-size: large;
+}
+
+
+
+label.w-100{
+
+    width: 100%;
+}
+
+#info-fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: .5rem 0;
+}
+
+
+
+
+
+.fieldset-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.fieldset-column h3{
+    padding: .5rem 0;
+}
+
+
+
+.fieldset-column label{
+    padding: .5rem 0;
+}
+
+div.input-in-columns{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2rem;
+}
+
+div.col{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
+.input-in-columns label{
+    width: 100%;
+}
+
+#registration-box section{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+input[type="text"], input[type="number"]{
+    width: 100%;
+}
+
+.columna{
+    width: 50%;
+    display: flex;
+}
+
+#permit-p{
+    text-indent: 0;
+    font-size: large;
+}
+
+/* ADDING STYLE TO INPUTS */
+
+input[type="text"], input[type="number"],input[type="date"]{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color:#C0C0C0;
+    opacity: 0.8;
+    font-size: large;
+}
+
+
+input,label,legend{
+    padding: .3rem;
+}
+
+input[type="submit"]{
+    padding: 1rem 1.5rem;
+    background: none;
+    align-self: center;
+    text-transform: uppercase;
+    border: 1px solid white;
+    color:white;
+    letter-spacing: .3rem;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px;
+    /* text-orientation:sideways-right; */
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+input[type="submit"]:hover{
+    /* transform: scaleX(-1); */
+    background-color: #C0C0C0;
+    color:black;
+    /* transform: rotateY(180deg); */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    align-self: center;
+}
+
+/* Permission box */
+
+#permission-box{
+    padding-left: 0;
+    width: 100%;
+
+}
+
+#permission-box input{
+    width: auto;
+}
+
+#permission-box label{
+    width: 80%;
+}
+
+
+.permission-box-fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+form h2{
+    padding: 0;
+    text-align: center;
+}
+
+legend{
+    font-size: 1.3rem;
+    margin-inline-start:0;
+    font-weight:bold;
+    padding-inline-start:0;
+}
+
+fieldset{
+    padding: 2.3rem 0;
+}
+
+span.label-container, span label{
+    font-weight: lighter;
+}
+
+/* MAPS----- */
+
+.maps{
+    /* background-color: seagreen; */
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.maps figure {
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+.maps figure h4 {
+    padding-bottom: .5rem;
+}
+
+.maps figure:hover{
+    transform: scale(1.15);
+}
+
+#locations-title{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+
+
+/* SHOW-DATA HTML */
+
+.body-inside-box{
+    
+    background-image: url(../assets/fondo.jpg);
+    background-position: 90% 10%;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    height: 170vh;
+}
+
+.body-rgba{
+    background-color: rgba(0, 0, 0, 0.603);
+    height: auto;
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-inside-box h2{
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #C0C0C0;
+    font-size: 1.4rem;
+    width: 50%;
+    letter-spacing: .3rem;
+    text-shadow: 4px 3px 0px rgb(59, 59, 59), 9px 8px 0px rgba(0,0,0,0.15);
+}
+
+.body-inside-box table{
+    border-collapse: collapse;
+    width: 38vw;
+    margin-bottom: 2rem;  
+}
+
+.body-inside-box th{
+    background-color: #8b0000;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+}
+
+
+.body-inside-box tr{
+    border-style:hidden;
+}
+
+.body-inside-box tr:nth-child(odd){
+    /* background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(192,192,192,0.3) 33%, rgba(192,192,192,0.3) 66%, rgba(192,192,192,0) 100%); */
+    background-color: #c0c0c033;
+    border-style:hidden;
+}
+
+.body-inside-box td, .body-inside-box th{
+    padding: .7rem 2rem;
+    color:white;
+    border: none;
+}
+
+.body-inside-box tr:hover{
+    background-color: #8b000075;
+    color:white;
+}
+
+
+
+/* MEDIA QUERIES - RESPONSIVE DESIGN ------------*/
+
+
+@media screen and (max-width: 768px) {
+
+
+    /* HEADER */
+
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    .logo{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .logo img{
+        padding: 0;
+        width: 22vh;
+    }
+    h1{
+        font-size: 1.5rem;
+        padding-inline-start: .6rem;
+    }
+
+    .text-container .title {
+        height: 3.45rem;
+        padding: 1rem .8rem;
+        
+}
+
+    .text-container .title h2 {
+        font-size: 1rem;
+    }
+
+    /* MAIN */
+    .article-content .picture{
+        display: none;
+    }
+
+    .article-content .text {
+        width: 100%;
+        padding: .5rem 1rem;
+        text-align: justify;
+        height: 100%;
+    }
+
+    .article-content{
+        height: 100%;
+    }
+
+    .contact-main{
+        height: 70vh;
+    }
+
+    /* NAV */
+
+
+    nav{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start; 
+    }
+
+    nav a{
+        height: 3.45rem;
+        padding: 1rem 1.9rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    div.article-table{
+        margin:0;
+        padding:0;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 7% auto auto;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #main-game-info{
+        grid-column: 1 / 3;
+        grid-row: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .table-heading{
+        grid-column: 1/3;
+        width: 80%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .registration-table{
+        width: 100vw;
+    }
+
+    /* first table column */
+
+
+    td,th{
+        min-width: 3.4rem;
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+
+    #september{
+        font-size: 9.5px;
+        word-break: break-all;
+    }
+
+    tfoot td{
+        padding-inline-start: 1.3rem;
+        padding-bottom: .5rem;
+    }
+    nav#game-info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .maps{
+        grid-row: 4;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* RULES */
+
+    main article ol,main article ul > li{
+        padding:0;
+        margin:0;
+    }
+
+
+    /* REGISTRATION  */
+    #registration-main{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #registration-box, #registration-box form{
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-overflow: ellipsis;
+        
+    }
+
+    fieldset, fieldset div, fieldset label{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    div.box .columna  {
+        width: 100%;
+        display: flex;
+    }
+
+
+    .gender-box, .grade-box-within, .closest-school .col, .input-in-columns .col {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+
+    .gender-box input, .grade-box-within input, .closest-school .col input, .input-in-columns .col input {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+    }
+
+    fieldset label{
+        display: flex;
+        align-items: center;
+    }
+
+    fieldset label input, #permission-box input[type="date"]{
+        width: 100%;
+    }
+
+    #permission-box input[type="text"]{
+        width: 98%;    
+    }
+
+
+    #registration-box fieldset{
+        padding: .5rem .6rem;
+    }
+
+    .permission-box-fieldset{
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        margin-top: 1.5rem;
+    }
+
+    div.input-in-columns{
+        gap:0;
+    }
+
+    #permit-p{
+        padding-top:0;
+    }
+
+    input[type="submit"]{
+        margin-top: 1rem;
+    }
+
+    /* SHOW-DATA HTML */
+    
+    .body-inside-box{
+        width: 100vw;
+        height: 140vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .body-inside-box h2{
+        width: 80%;
+        margin-top: 0;
+    }
+
+    /* CONTACT */
+
+    
+
+
+}
+
+
+
+@media screen and (min-width: 2560px) {
+    #imagen1{
+        object-position: 34%;
+    }
+    #imagen2{
+        object-position: 70%;    
+    }
+    #imagen3{
+        object-position: 69%;    
+    }
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20vh 7vh auto;
+    }
+    header{
+        background-size: cover;
+    }
+    .logo img{
+        height: 18vh;
+        width: 18vh;
+        align-self: center;
+    }   
+
+    h1{
+        font-size: 3rem;
+    }
+    nav a{
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+    }
+    .title{
+        height: 6vh;
+    }
+    .title h2{
+        font-size: 2.2rem;
+    }
+
+    main .text-container,main .article-content,main table,main fieldset label{
+        font-size: 2rem;
+    }
+
+    #registration-main form {
+        font-size: 2.5rem;
+    }
+
+    #registration-main legend{
+        font-size: 3rem;
+    }
+
+    .input-in-columns{
+        justify-content: space-evenly;
+    }
+    #permit-p{
+        font-size: 2.5rem;
+    }
+    #permission-box label, #permission-box input{
+        font-size: 3rem;
+        width: 40%;
+    }
+    input[type="submit"]{
+        height: 6rem;
+        width: 18rem;
+        font-size: 2rem;
+    }
+
+    #info-fieldset *{
+        font-size: 3rem;
+    }
+
+    /* SHOW DATA */
+    .body-inside-box{
+        height: 100vh;
+    }
+    .body-inside-box h2{
+        font-size: 3rem;
+    }
+
+    .body-inside-box table{
+        font-size: 2.4rem;
+        margin-top: 2rem;
+    }
+}
